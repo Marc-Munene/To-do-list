@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First TO DO LIST APP</title>
+
+    <!-- Tailwind css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="css/external.css" />
+  </head>
+  <body class="bg-cover bg-center">
+    <!-- container start -->
+    <div
+      class="continer flex flex-col justify-center items-center text-center min-h-screen text-3xl "
+    >
+      <!-- inner div start -->
+      <div class="border-2 border-solid border-black p-5">
+        <h1 class="mb-5 text-white">MY TO DO LIST</h1>
+
+        <input
+          type="text"
+          name=""
+          id="input"
+          placeholder="Enter a Task"
+          class="border-2 border-black border-solid p-2"
+        />
+        <button
+          class="bg-slate-600 hover:bg-gray-700 text-white p-2 mt-4 rounded"
+        >
+          Add Task
+        </button>
+
+        <div id="output"></div>
+        <div id="delete"></div>
+        <div></div>
+
+        <!-- inner div end -->
+      </div>
+
+      <!-- Container end -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
