@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First TO DO LIST APP</title>
 
+    <!-- Favicon -->
+
+    <link rel="icon" href="/build/images/to-do-icon.jpg" type="image/jpg" />
+
     <!-- Tailwind css -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -14,29 +18,31 @@
   <body class="bg-cover bg-center">
     <!-- container start -->
     <div
-      class="continer flex flex-col justify-center items-center text-center min-h-screen text-3xl "
+      class="container flex flex-col justify-center items-center text-center min-h-screen text-3xl"
     >
       <!-- inner div start -->
-      <div class="border-2 border-solid border-black p-5">
-        <h1 class="mb-5 text-white">MY TO DO LIST</h1>
+      <div class="border-2 border-solid border-black p-5" id="inner">
+        <h1 class="mb-5 text-gray-800 font-semibold">MY TO DO LIST</h1>
 
         <input
           type="text"
           name=""
           id="input"
           placeholder="Enter a Task"
+          autofocus
           class="border-2 border-black border-solid p-2"
         />
         <button
           class="bg-slate-600 hover:bg-gray-700 text-white p-2 mt-4 rounded"
+          onclick="toDoListApp(event)"
         >
           Add Task
         </button>
 
-        <div id="output"></div>
-        <div id="delete"></div>
-        <div></div>
-
+        <div
+          id="display"
+          class="flex flex-col items-center justify-center gap-4 text-white mt-4 p-5"
+        ></div>
         <!-- inner div end -->
       </div>
 
