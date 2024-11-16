@@ -1,5 +1,5 @@
 const body = document.body;
-body.style.backgroundImage = 'url("/build/images/to-do-list-background.jpg")';
+body.style.backgroundImage = 'url("/TO-DO-LIST-APP/build/images/to-do-list-background.jpg")';
 
 
 const toDoListApp = (event) =>{
